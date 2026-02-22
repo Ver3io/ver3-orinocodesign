@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Mail, Phone, MapPin, ArrowRight } from "lucide-react";
-import logoImg from "@assets/PHOTO-2026-02-19-11-56-02_1771520447566.jpg";
+import logoImg from "@assets/orinoco-logo-cropped.jpg";
 
 export function Footer() {
   return (
