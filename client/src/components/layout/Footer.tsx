@@ -10,7 +10,7 @@ export function Footer() {
           
           <div>
             <div className="mb-6">
-              <img src={logoImg} alt="Orinoco Supply LLC" className="h-14 w-auto" />
+              <img src={logoImg} alt="Orinoco Supply LLC" className="h-20 md:h-24 w-auto" />
             </div>
             <p className="mb-4 text-sm leading-relaxed text-gray-600">
               Empresa especializada en el suministro de una amplia gama de insumos industriales. Confiabilidad, calidad y precios competitivos.

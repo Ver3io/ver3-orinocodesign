@@ -42,7 +42,7 @@ export function Navbar() {
             <img
               src={logoImg}
               alt="Orinoco Supply LLC"
-              className="h-12 md:h-14 w-auto"
+              className="h-16 md:h-20 w-auto"
             />
           </Link>
 
