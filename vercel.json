@@ -1,0 +1,10 @@
+{
+  "installCommand": "npm ci",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist/public",
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/[...all].ts" },
+    { "handle": "filesystem" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}

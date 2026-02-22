@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Oswald', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+
+  /* Orinoco Supply Color Palette - Based on Logo */
+  /* Dark Charcoal Grey - from "ORINOCO" text */
+  --primary: 210 10% 25%;
+  --primary-foreground: 0 0% 98%;
+
+  /* Teal/Cyan Blue - from logo swoosh */
+  --accent: 192 55% 45%;
+  --accent-foreground: 0 0% 98%;
+
+  /* Light grey background with subtle blue tint */
+  --background: 210 15% 97%;
+  --foreground: 210 12% 18%;
+  
+  --muted: 210 12% 94%;
+  --muted-foreground: 210 8% 50%;
+  
+  --card: 0 0% 100%;
+  --card-foreground: 210 12% 18%;
+  
+  --popover: 0 0% 100%;
+  --popover-foreground: 210 12% 18%;
+  
+  --border: 210 15% 90%;
+  --input: 210 15% 90%;
+  
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  
+  --ring: 192 55% 45%;
+  
+  --radius: 0.25rem;
+}
+
+.dark {
+  --background: 210 12% 10%;
+  --foreground: 0 0% 95%;
+  
+  --card: 210 12% 13%;
+  --card-foreground: 0 0% 95%;
+  
+  --popover: 210 12% 13%;
+  --popover-foreground: 0 0% 95%;
+  
+  --primary: 210 10% 25%;
+  --primary-foreground: 0 0% 98%;
+  
+  --muted: 210 10% 18%;
+  --muted-foreground: 210 8% 60%;
+  
+  --accent: 192 55% 45%;
+  --accent-foreground: 0 0% 98%;
+  
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 0 0% 98%;
+  
+  --border: 210 10% 18%;
+  --input: 210 10% 18%;
+  
+  --ring: 192 55% 50%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-wide uppercase;
+  }
+}
+
+/* Custom Utilities */
+.text-stroke {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+}
+
+.clip-diagonal {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+
+.industrial-grid {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
